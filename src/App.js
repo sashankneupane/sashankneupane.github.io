@@ -1,25 +1,25 @@
-import logo from './logo.svg';
 import './App.css';
+
+
+const Bio = () => {
+  return (
+    <>
+      <h2>Hi, I'm Sashank!</h2>
+      <p>A <b>learner</b>, <b>coder</b>, and <b>problem solver</b>.</p>
+      <p style={{color: 'red'}}>This website is under construction. Stay tuned!</p>
+    </>
+  );
+};
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Bio />
     </div>
   );
 }
+
+
 
 export default App;
