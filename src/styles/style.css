@@ -1,0 +1,125 @@
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+  .present{
+    color: green;
+    /* make text bold */
+    font-weight: bold;
+  }
+
+
+  .cv-container {
+    margin: 50px;
+    padding: 50px;
+    border: 1px solid #ccc;
+  }
+  
+  /* Header styles */
+  .cv-header {
+    margin: 0;
+    font-size: 36px;
+  }
+  
+  .cv-contact {
+    margin-top: 20px;
+    font-size: 18px;
+  }
+  
+  .cv-link {
+    color: #ae266a;
+    text-decoration: none;
+  }
+  
+  .cv-separator {
+    margin: 0 10px;
+  }
+  
+  /* Section styles */
+  .cv-section {
+    margin-top: 40px;
+  }
+  
+  .cv-section-header {
+    font-size: 24px;
+    margin: 0 0 20px 0;
+  }
+  
+  /* Item styles */
+  .cv-item {
+    margin: 20px 0;
+  }
+  
+  .cv-item-header {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .cv-item-title {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .cv-item-date {
+    font-size: 16px;
+  }
+  
+  .cv-item-subheader {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  .cv-item-description {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+
+
+  
+  /* Rule styles */
+  .cv-rule {
+    margin-top: 40px;
+    border: none;
+    border-top: 1px solid #ccc;
+  }
+
+  .cv-list{
+    list-style: square;
+  }
+
+
+  /* Media queries */
+@media only screen and (max-width: 768px) {
+    .nomobile{
+        visibility: hidden;
+    }
+    .cv-container {
+      margin: 10px;
+      padding: 10px;
+    }
+    .cv-header {
+      font-size: 24px;
+    }
+    .cv-contact {
+      font-size: 16px;
+    }
+    .cv-section-header {
+      font-size: 20px;
+    }
+    .cv-item-title {
+      font-size: 16px;
+    }
+    .cv-item-date {
+      font-size: 14px;
+    }
+    .cv-item-subheader {
+      font-size: 14px;
+    }
+    .cv-item-description {
+      font-size: 14px;
+    }
+  }
