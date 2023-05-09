@@ -8,7 +8,9 @@ const CV = () => {
           <div className="cv-contact">
             <a href="mailto:sashank.neupane@nyu.edu" className="cv-link">sashank.neupane@nyu.edu</a>
             <span className="cv-separator nomobile"> | </span>
-            <a href="sashankneupane.com.np" className="cv-link">sashankneupane.com.np</a>
+            <a href="sashankneupane.com" className="cv-link">sashankneupane.com</a>
+            <span className="cv-separator nomobile"> | </span>
+            <a href="https://www.github.com/sashankneupane" className='cv-link'> sashankneupane </a>
           </div>
           <hr className="cv-rule" />
           <section className="cv-section">
@@ -76,17 +78,6 @@ const CV = () => {
 
   );
 }
-
-
-const Bio = () => {
-  return (
-    <>
-      <h2>Hi, I'm Sashank!</h2>
-      <p>A <b>learner</b>, <b>coder</b>, and <b>problem solver</b>.</p>
-      <p style={{color: 'red'}}>This website is under construction. Stay tuned!</p>
-    </>
-  );
-};
 
 
 function App() {
