@@ -6,17 +6,17 @@ import TagManager from 'react-gtm-module';
 TagManager.dataLayer({
     dataLayer: {
       event: 'pageview',
-      pagePath: '/cv',
-      pageTitle: 'CV',
+      pagePath: '/projects',
+      pageTitle: 'projects',
     },
   });
 
-const CV = () => {
-  return (
-    <div>
-        <CVComponent />
-    </div>
-  );
+const Projects = () => {
+    return (
+        <div>
+            <CVComponent />
+        </div>
+    );
 }
 
-export default CV;
+export default Projects;
