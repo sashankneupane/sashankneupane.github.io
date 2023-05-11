@@ -5,7 +5,7 @@ import { createBrowserHistory } from 'history';
 
 import CV from './pages/CV';
 import Projects from './pages/Projects';
-import NotFound from './components/NotFound';
+import NotFound from './pages/NotFound';
 
 
 const history = createBrowserHistory();
