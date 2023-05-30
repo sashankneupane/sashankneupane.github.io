@@ -13,4 +13,3 @@ const NotFoundComponent = () => {
 }
 
 export default NotFoundComponent;
-
