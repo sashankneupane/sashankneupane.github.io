@@ -1,6 +1,10 @@
 import React from 'react';
 import {Helmet} from 'react-helmet';
 
+import Navbar from '../components/Navbar';
+import CVComponent from '../components/CVComponent';
+import Footer from '../components/Footer';
+
 const Index = () => {
   return ( 
     <div>
@@ -9,9 +13,9 @@ const Index = () => {
             <title>Home</title>
         </Helmet>
     
-        <div style={{margin: "auto", width: "fit-content"}}>
-            Hi, I am Sashank.
-        </div>
+        <Navbar />
+        <CVComponent />
+        <Footer />
 
     </div>
   );

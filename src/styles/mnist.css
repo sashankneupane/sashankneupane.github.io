@@ -1,0 +1,33 @@
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: var(--light);
+    color: var(--dark);
+  }
+  
+  /* Dark mode */
+  body.dark-mode {
+    background: var(--dark);
+    color: var(--light);
+  }
+
+.mnist-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.dark-mode .mnist-page {
+  background: var(--dark);
+  color: var(--light);
+}
+
+.mnist-content {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

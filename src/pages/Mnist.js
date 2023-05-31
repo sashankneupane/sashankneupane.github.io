@@ -1,16 +1,23 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
 import MNISTComponent from '../components/MNISTComponent';
+import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
+import '../styles/mnist.css';
+import { DarkModeContext } from '../contexts/DarkModeContext';
 
-const Mnist = () => {
+const MNIST = () => {
+  const { darkMode } = React.useContext(DarkModeContext);
   return (
-    <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', minHeight: '100vh' }}>
-      <Helmet>
-        <title>MNIST Digit Classifier</title>
-      </Helmet>
-      <MNISTComponent />
+    <div className={`mnist-page ${darkMode? 'dark-mode': ''}`}>
+
+      <Navbar />
+      <div className="mnist-content">
+        <MNISTComponent />
+      </div>
+      <Footer />
     </div>
   );
 };
 
-export default Mnist;
+export default MNIST;

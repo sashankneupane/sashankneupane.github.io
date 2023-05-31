@@ -1,0 +1,66 @@
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: var(--light);
+    color: var(--dark);
+  }
+  
+  /* Dark mode */
+  body.dark-mode {
+    background: var(--dark);
+    color: var(--light);
+
+  }
+  
+  .projects-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Set the height to 100% of the viewport height */
+  }
+
+  .projects-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1; /* Allow the container to grow and fill the remaining space */
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .project {
+    width: 600px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 40px;
+  }
+  
+  .project h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .project p {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  
+  .project-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--dark);
+    color: var(--light);
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  .dark-mode .project-link {
+    font: bold;
+    background-color: var(--light);
+    color: var(--dark);
+  }
+  
+
+  

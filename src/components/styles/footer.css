@@ -1,0 +1,26 @@
+.footer {
+    background: var(--light);
+    color: var(--dark);
+    padding: 20px;
+    text-align: center;
+}
+  
+.footer.dark-mode {
+background: var(--dark);
+color: var(--light);
+}
+
+.footer-content {
+display: flex;
+justify-content: center;
+color: var(--dark);
+}
+
+.dark-mode .footer-content {
+color: var(--light);
+}
+
+
+.footer-copyright {
+font: 17px bold;
+}

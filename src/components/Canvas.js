@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
+import { DarkModeContext } from "../contexts/DarkModeContext";
 
 const gridSize = 28;
 const canvasSize = 560;
@@ -72,13 +73,17 @@ const MNISTComponent = () => {
     console.log(formattedCanvasData)
   };
 
+  const boxStyle = darkMode
+  ? `border: 1px solid var(--light); display: block;`
+  : `border: 1px solid var(--dark); display: block;`;
+
   return (
     <div>
       <canvas
         ref={canvasRef}
         width={canvasSize}
         height={canvasSize - 1}
-        style={{ border: "1px solid black", display: "block" }}
+        style={boxStyle}
       />
       <button onClick={handleButtonClick}>Submit</button>
     </div>

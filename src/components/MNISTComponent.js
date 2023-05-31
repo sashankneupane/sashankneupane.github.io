@@ -1,33 +1,31 @@
-import React, { Component } from 'react';
+import React, { useContext } from 'react';
 import NumberRecognition from './NumberRecognition';
-import './styles/style.css';
+import { DarkModeContext } from '../contexts/DarkModeContext';
 
 const CANVAS_WIDTH = 400;
 const CANVAS_HEIGHT = 400;
 
+const MNISTComponent = () => {
+  const { darkMode } = useContext(DarkModeContext);
+  return (
+    <div className={`mnist-wrapper ${darkMode ? 'dark-mode' : ''}`} style={{ textAlign: 'center' }}>
+      <h4>
+        Will update with a better model soon.
+      </h4>
 
-export default class MNISTComponent extends Component {
-  render() {
-    return (
-      <div style={{ textAlign: 'center'}}>
-        <h4>
-           Using a trained MNIST Keras model, with Tensorflow.js and React.js
-        </h4>
+      <NumberRecognition
+        width={CANVAS_WIDTH}
+        height={CANVAS_HEIGHT}
+      >
+        {(predictedNumber, predictions) => (
+          <>
+            <h4>Predicted number:</h4>
+            <h2>{predictedNumber}</h2>
+          </>
+        )}
+      </NumberRecognition>
+    </div>
+  );
+};
 
-        <NumberRecognition
-           width={CANVAS_WIDTH}
-           height={CANVAS_HEIGHT}
-        >
-        {
-          (predictedNumber, predictions) => (
-            <>
-              <h4>Predicted number:</h4>
-              <h2>{predictedNumber}</h2>
-            </>
-          )
-        }
-        </NumberRecognition>
-      </div>
-    );
-  }
-}
+export default MNISTComponent;

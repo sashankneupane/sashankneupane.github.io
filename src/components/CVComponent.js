@@ -1,11 +1,18 @@
-import React from 'react';
-import '../styles/style.css';
+import React, {useContext} from 'react';
+import './styles/cvcomponent.css';
 
+import { DarkModeContext } from '../contexts/DarkModeContext';
 
 const CVComponent = () => {
+
+  const {darkMode} = useContext(DarkModeContext);
+
+  const cvWrapperClass = darkMode ? 'cv-wrapper dark-mode' : 'cv-wrapper';
+
     return (
-      <div className="cv-container">
-        <h1 className="cv-header">Sashank Neupane</h1>
+      <div className= {cvWrapperClass}>
+      <div className='cv-container'>
+        <h1 className='cv-header'>Sashank Neupane</h1>
         <div className="cv-contact">
           <a href="mailto:sashank.neupane@nyu.edu" className="cv-link">sashank.neupane@nyu.edu</a>
           <span className="cv-separator nomobile"> | </span>
@@ -75,6 +82,7 @@ const CVComponent = () => {
           </ul>
 
         </section>
+    </div>
     </div>
 );
 }

@@ -1,13 +1,8 @@
-:root {
-    --color1: rgb(251, 247, 251);
-    --color2: #3d1b5c;
+.navbar-wrapper {
+    background: var(--light);
+    color: var(--dark);
 }
 
-.navbar-wrapper {
-    background: var(--color1);
-    color: var(--color2);
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
 
 .navbar {
     width: 80%;
@@ -17,19 +12,33 @@
     justify-content: space-between;
     align-items: center;
     padding: 20px 40px;
-    box-shadow: 0 rgba(0, 0, 0, 0.1);
-  }
+    border-bottom: 1px solid var(--dark);
+}
 
-.dark {
-    background: var(--color2);
-    color: var(--color1);
+.dark-mode {
+    background: var(--dark);
+    color: var(--light);
+}
+
+.dark-mode .navbar{
+  border-bottom: 1px solid var(--light);
 }
   
   .logo {
     font-size: 20px;
     font-weight: bold;
     background: inherit;
-    color: inherit;
+    color: var(--dark);
+  }
+
+  .logo a{
+    text-decoration: none;
+    color: var(--dark);
+    cursor: pointer;
+  }
+
+  .dark-mode .logo a{
+    color: var(--light);
   }
   
   .nav-links {
@@ -44,18 +53,39 @@
   .nav-tab {
     border-radius: 5px;
     padding: 10px 15px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   }
-  
+
   .nav-links li {
     margin-left: 20px;
+    position: relative;
   }
   
   .nav-links a {
     text-decoration: none;
     font-weight: bold;
+    display: inline-block;
+    position: relative;
+  }
+
+  .nav-links a::before {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: var(--dark);
+    transition: width 0.5s ease-in-out;
+  }
+
+  .dark-mode .nav-links a::before {
+    background-color: var(--light);
   }
   
+  .nav-links a:hover::before {
+    width: 100%;
+  }
+
   .social-icons {
     display: flex;
   }
@@ -69,7 +99,7 @@
   
   .dark-mode-toggle {
     border: none;
-    color: var(--color2);
+    color: var(--dark);
     cursor: pointer;
     font-weight: bold;
     font-size: 23px;
@@ -78,20 +108,24 @@
   }
   
   .dark-mode {
-    background-color: var(--color2);
-    color: var(--color1);
+    background-color: var(--dark);
+    color: var(--light);
   }
   
+  .dark-mode .logo {
+    color: var(--light);
+  }
+
   .dark-mode .nav-links a {
-    background: var(--color2);
-    color: var(--color1);
+    background: var(--dark);
+    color: var(--light);
   }
   
   .dark-mode .social-icons a {
-    background: var(--color2);
-    color: var(--color1);
+    background: var(--dark);
+    color: var(--light);
   }
   
   .dark-mode .dark-mode-toggle {
-    color: var(--color1);
+    color: var(--light);
   }

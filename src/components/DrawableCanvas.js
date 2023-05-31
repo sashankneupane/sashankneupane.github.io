@@ -1,6 +1,8 @@
-import React, { Component } from 'react';
+import React, { Component, useContext } from 'react';
 
 export default class DrawableCanvas extends Component {
+  
+
   constructor(props){
     super(props);
     this.handleOnMouseDown = this.handleOnMouseDown.bind(this);
@@ -92,16 +94,12 @@ export default class DrawableCanvas extends Component {
   }
 
   render() {
-    const style = {
-      cursor: 'crosshair',
-      border: '1px black solid',
-    };
 
     return (
         <canvas 
           ref={(canvas) => {this.canvas = canvas; }}
           width={this.props.width}
-          style={style}
+          style={{border: '1px solid #000000'}}
           height={this.props.height}
           onMouseDown = {this.handleOnMouseDown}
           onTouchStart = {this.handleOnTouchStart}

@@ -5,9 +5,11 @@ import { createBrowserHistory } from 'history';
 
 import Index from './pages/Index';
 import CV from './pages/CV';
-import Mnist from './pages/Mnist';
+import MNIST from './pages/Mnist';
 import Projects from './pages/Projects';
 import NotFound from './pages/NotFound';
+import Blog from './pages/Blog';
+
 
 const history = createBrowserHistory();
 history.listen((location) => {
@@ -27,8 +29,9 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Index />} />
         <Route path="/cv" element={<CV />} />
+        <Route path="/blog" element={<Blog />} />
         <Route path="/projects" element={<Projects />} />
-        <Route path="/mnist" element={<Mnist />} />
+        <Route path="/projects/mnist" element={<MNIST />} />
         <Route path="*" element={<Navigate to="/404" />} />
         <Route path="/404" element={<NotFound />} />
       </Routes>
