@@ -1,5 +1,10 @@
 const config = {
-    "gtmId": "G-0GZ4EJMXE7"
-}
+    "gtmId": "G-0GZ4EJMXE7",
+    "site_name": "Sashank Neupane",
+    "site_title": "Sashank Neupane",
+    "site_url": "https://sashankneupane.com",
+    "site_description": "Personal Website",
+    "github": "https://github.com/sashankneupane",
+    }
 
 export default config;
