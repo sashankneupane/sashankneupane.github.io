@@ -4,7 +4,7 @@ import {Helmet} from 'react-helmet';
 
 import CVComponent from '../components/CVComponent';
 
-const Index = () => {
+const Home = () => {
   return ( 
     <div>
 
@@ -19,4 +19,4 @@ const Index = () => {
   );
 }
 
-export default Index;
+export default Home;

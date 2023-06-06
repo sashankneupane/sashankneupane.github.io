@@ -54,7 +54,7 @@ const Navbar = () => {
             <a href={config.github}>
                 <FaGithub />
             </a>
-            <button className="dark-mode-toggle" onClick={handleDarkModeToggle}>
+            <button className="dark-mode-toggle"> 
                 {darkMode ? <BsSun /> : <MdDarkMode />}
             </button>
         </div>

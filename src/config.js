@@ -5,7 +5,7 @@ const config = {
     "site_url": "https://sashankneupane.com",
     "site_description": "Personal Website",
     "github": "https://github.com/sashankneupane",
-    "darkMode": true,
+    "darkMode": false,
     "footer": "Sashank Neupane " + new Date().getFullYear(),
   };
 
