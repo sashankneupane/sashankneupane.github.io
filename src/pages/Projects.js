@@ -1,6 +1,4 @@
 import React from 'react';
-import Navbar from '../components/Navbar';
-import Footer from '../components/Footer';
 import '../styles/projects.css';
 
 import {DarkModeContext} from '../contexts/DarkModeContext';
@@ -10,7 +8,6 @@ const ProjectsPage = () => {
 
   return (
     <div className={`projects-wrapper ${darkMode ? "dark-mode" : ""}`}>
-      <Navbar />
       
       <main className="projects-container">
         <div className="project">
@@ -22,7 +19,6 @@ const ProjectsPage = () => {
         </div>
       </main>
       
-      <Footer />
     </div>
   );
 };

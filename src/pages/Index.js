@@ -1,9 +1,8 @@
 import React from 'react';
 import {Helmet} from 'react-helmet';
 
-import Navbar from '../components/Navbar';
+
 import CVComponent from '../components/CVComponent';
-import Footer from '../components/Footer';
 
 const Index = () => {
   return ( 
@@ -12,10 +11,9 @@ const Index = () => {
         <Helmet>
             <title>Home</title>
         </Helmet>
-    
-        <Navbar />
+
         <CVComponent />
-        <Footer />
+  
 
     </div>
   );
