@@ -30,7 +30,7 @@ const Navbar = () => {
   return (
     <div className = 'navbar-wrapper'>
         <nav className={navbarClass}>
-        <div className="logo"><a href="/">Sashank Neupane</a></div>
+        <div className="logo"><a href="/">Personal Portfolio</a></div>
         {
         //   <ul className="nav-links">
         //     <li>
@@ -57,11 +57,11 @@ const Navbar = () => {
             <a href={config.github}>
                 <FaGithub />
             </a>
-      {
-        // <button className="dark-mode-toggle"> 
-        //   {darkMode ? <BsSun /> : <MdDarkMode />}
-        // </button>
-      }      
+    
+            <button className="dark-mode-toggle" onClick={handleDarkModeToggle}>
+            {darkMode ? <BsSun /> : <MdDarkMode />}
+        </button>
+ 
         </div>
 
         </nav>
