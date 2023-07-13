@@ -31,32 +31,37 @@ const Navbar = () => {
     <div className = 'navbar-wrapper'>
         <nav className={navbarClass}>
         <div className="logo"><a href="/">Sashank Neupane</a></div>
-        <ul className="nav-links">
-            <li>
-                <div className="nav-tab">
-                    <a href="/">Home</a>
-                </div>
-            </li>
+        {
+        //   <ul className="nav-links">
+        //     <li>
+        //         <div className="nav-tab">
+        //             <a href="/">Home</a>
+        //         </div>
+        //     </li>
 
-            <li>
-                <div className="nav-tab">
-                    <a href="/projects">Projects</a>
-                </div>
-            </li>
+        //     <li>
+        //         <div className="nav-tab">
+        //             <a href="/projects">Projects</a>
+        //         </div>
+        //     </li>
             
-            <li>
-                <div className="nav-tab">
-                    <a href="/blog">Blog</a>
-                </div>
-            </li>
-        </ul>
+        //     <li>
+        //         <div className="nav-tab">
+        //             <a href="/blog">Blog</a>
+        //         </div>
+        //     </li>
+        // </ul>
+        }
+        
         <div className="social-icons">
             <a href={config.github}>
                 <FaGithub />
             </a>
-            <button className="dark-mode-toggle"> 
-                {darkMode ? <BsSun /> : <MdDarkMode />}
-            </button>
+      {
+        // <button className="dark-mode-toggle"> 
+        //   {darkMode ? <BsSun /> : <MdDarkMode />}
+        // </button>
+      }      
         </div>
 
         </nav>

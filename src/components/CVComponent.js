@@ -22,20 +22,36 @@ const CVComponent = () => {
         </div>
         <hr className="cv-rule" />
         <section className="cv-section">
-          <h2 className="cv-section-header">Education</h2>
-          <ul className="cv-list">
-            <li className="cv-item">
-              <div className="cv-item-header">
-                <span className="cv-item-title">New York University Abu Dhabi</span>
-                <span className="cv-item-date present">Aug 2021 - Present</span>
-              </div>
-              <div className="cv-item-subheader">Major in Computer Science and Mathematics</div>
-              <div className="cv-item-description">
-                Data Structures, Algorithms, Computer Systems Organization, Multivariable Calculus, Linear Algebra, Ordinary Differential Equations, Probability and Statistics, Fundamentals of Machine Learning, Artificial Intelligence, Computer Networking, Data Management and Analysis
-              </div>
-            </li>
-          </ul>
-        </section>
+  <h2 className="cv-section-header">Education</h2>
+  <ul className="cv-list">
+    <li className="cv-item">
+      <div className="cv-item-header">
+        <span className="cv-item-title">New York University Abu Dhabi</span>
+        <span className="cv-item-date present">Aug 2021 - Present</span>
+      </div>
+      <div className="cv-item-subheader">Major in Computer Science and Mathematics</div>
+      <div className="cv-item-description">
+        <p>Computer Science Courses:</p>
+        <ul>
+          <li>Data Structures</li>
+          <li>Algorithms</li>
+          <li>Computer Systems Organization</li>
+          <li>Fundamentals of Machine Learning</li>
+          <li>Artificial Intelligence</li>
+          <li>Computer Networking</li>
+          <li>Data Management and Analysis</li>
+        </ul>
+        <p>Mathematics Courses:</p>
+        <ul>
+          <li>Multivariable Calculus</li>
+          <li>Linear Algebra</li>
+          <li>Ordinary Differential Equations</li>
+          <li>Probability and Statistics</li>
+        </ul>
+      </div>
+    </li>
+  </ul>
+</section>
         <hr className="cv-rule" />
         <section className="cv-section">
           <h2 className="cv-section-header">Experience</h2>
@@ -48,7 +64,8 @@ const CVComponent = () => {
               <div className="cv-item-subheader">Summer Research Assistantship Program</div>
               <div className="cv-item-description">
                 <ul>
-                  <li> Implementing state-of-the-art Backdoor Attacks and Defenses. Analyzing the pros and cons of existing defense mechanisms as well as their robustness in full-system setting, and devising a more powerful defense considering the ADAS stack.</li>
+                  <li> Implementing state-of-the-art Backdoor Attacks and Defenses. Analyzing and benchmarking the performance of these attacks and defenses on different datasets and models. </li>
+                  <li> Analyzing the pros and cons of existing defense mechanisms as well as their robustness in full-system setting, and devising a more powerful defense considering the ADAS stack.</li>
                   <li> Testing and validation for different use-cases of autonomous vehicles, and different drive situations.</li>
                 </ul>
               </div>
